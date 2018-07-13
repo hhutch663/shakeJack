@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F01328C20E5226800D8F01A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01328B20E5226800D8F01A /* Card.swift */; };
+		0F03697E20E67343007247D0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F03697D20E67343007247D0 /* Game.swift */; };
+		0F03698020E6840A007247D0 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F03697F20E6840A007247D0 /* HomeScreenViewController.swift */; };
+		0F03698220E68A63007247D0 /* coreDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F03698120E68A63007247D0 /* coreDataExtensions.swift */; };
+		0F39CDFC20EA861A00CF4551 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F39CDFB20EA861A00CF4551 /* Helpers.swift */; };
+		0FFC7EE220E1B8AC00A18710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC7EE120E1B8AC00A18710 /* AppDelegate.swift */; };
+		0FFC7EE420E1B8AC00A18710 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC7EE320E1B8AC00A18710 /* GameViewController.swift */; };
+		0FFC7EE720E1B8AC00A18710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FFC7EE520E1B8AC00A18710 /* Main.storyboard */; };
+		0FFC7EEA20E1B8AC00A18710 /* Shake_Jack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC7EE820E1B8AC00A18710 /* Shake_Jack.xcdatamodeld */; };
+		0FFC7EEC20E1B8AD00A18710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FFC7EEB20E1B8AD00A18710 /* Assets.xcassets */; };
+		0FFC7EEF20E1B8AD00A18710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FFC7EED20E1B8AD00A18710 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F01328B20E5226800D8F01A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		0F03697D20E67343007247D0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		0F03697F20E6840A007247D0 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		0F03698120E68A63007247D0 /* coreDataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreDataExtensions.swift; sourceTree = "<group>"; };
+		0F39CDFB20EA861A00CF4551 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		0FFC7EDE20E1B8AC00A18710 /* Shake Jack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shake Jack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FFC7EE120E1B8AC00A18710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0FFC7EE320E1B8AC00A18710 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		0FFC7EE620E1B8AC00A18710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0FFC7EE920E1B8AC00A18710 /* Shake_Jack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shake_Jack.xcdatamodel; sourceTree = "<group>"; };
+		0FFC7EEB20E1B8AD00A18710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FFC7EEE20E1B8AD00A18710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0FFC7EF020E1B8AD00A18710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FFC7EDB20E1B8AC00A18710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FFC7ED520E1B8AC00A18710 = {
+			isa = PBXGroup;
+			children = (
+				0FFC7EE020E1B8AC00A18710 /* Shake Jack */,
+				0FFC7EDF20E1B8AC00A18710 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FFC7EDF20E1B8AC00A18710 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FFC7EDE20E1B8AC00A18710 /* Shake Jack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FFC7EE020E1B8AC00A18710 /* Shake Jack */ = {
+			isa = PBXGroup;
+			children = (
+				0FFC7EE120E1B8AC00A18710 /* AppDelegate.swift */,
+				0FFC7EE320E1B8AC00A18710 /* GameViewController.swift */,
+				0F39CDFB20EA861A00CF4551 /* Helpers.swift */,
+				0FFC7EE520E1B8AC00A18710 /* Main.storyboard */,
+				0F03697F20E6840A007247D0 /* HomeScreenViewController.swift */,
+				0F03697D20E67343007247D0 /* Game.swift */,
+				0F03698120E68A63007247D0 /* coreDataExtensions.swift */,
+				0F01328B20E5226800D8F01A /* Card.swift */,
+				0FFC7EEB20E1B8AD00A18710 /* Assets.xcassets */,
+				0FFC7EED20E1B8AD00A18710 /* LaunchScreen.storyboard */,
+				0FFC7EF020E1B8AD00A18710 /* Info.plist */,
+				0FFC7EE820E1B8AC00A18710 /* Shake_Jack.xcdatamodeld */,
+			);
+			path = "Shake Jack";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FFC7EDD20E1B8AC00A18710 /* Shake Jack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FFC7EF320E1B8AD00A18710 /* Build configuration list for PBXNativeTarget "Shake Jack" */;
+			buildPhases = (
+				0FFC7EDA20E1B8AC00A18710 /* Sources */,
+				0FFC7EDB20E1B8AC00A18710 /* Frameworks */,
+				0FFC7EDC20E1B8AC00A18710 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shake Jack";
+			productName = "Shake Jack";
+			productReference = 0FFC7EDE20E1B8AC00A18710 /* Shake Jack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FFC7ED620E1B8AC00A18710 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Heidi Hutchinson";
+				TargetAttributes = {
+					0FFC7EDD20E1B8AC00A18710 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 0FFC7ED920E1B8AC00A18710 /* Build configuration list for PBXProject "Shake Jack" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FFC7ED520E1B8AC00A18710;
+			productRefGroup = 0FFC7EDF20E1B8AC00A18710 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FFC7EDD20E1B8AC00A18710 /* Shake Jack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FFC7EDC20E1B8AC00A18710 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FFC7EEF20E1B8AD00A18710 /* LaunchScreen.storyboard in Resources */,
+				0FFC7EEC20E1B8AD00A18710 /* Assets.xcassets in Resources */,
+				0FFC7EE720E1B8AC00A18710 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FFC7EDA20E1B8AC00A18710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F03698220E68A63007247D0 /* coreDataExtensions.swift in Sources */,
+				0FFC7EEA20E1B8AC00A18710 /* Shake_Jack.xcdatamodeld in Sources */,
+				0F03697E20E67343007247D0 /* Game.swift in Sources */,
+				0F39CDFC20EA861A00CF4551 /* Helpers.swift in Sources */,
+				0FFC7EE420E1B8AC00A18710 /* GameViewController.swift in Sources */,
+				0FFC7EE220E1B8AC00A18710 /* AppDelegate.swift in Sources */,
+				0F01328C20E5226800D8F01A /* Card.swift in Sources */,
+				0F03698020E6840A007247D0 /* HomeScreenViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0FFC7EE520E1B8AC00A18710 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FFC7EE620E1B8AC00A18710 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0FFC7EED20E1B8AD00A18710 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FFC7EEE20E1B8AD00A18710 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FFC7EF120E1B8AD00A18710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0FFC7EF220E1B8AD00A18710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FFC7EF420E1B8AD00A18710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Shake Jack/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hh.Shake-Jack";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0FFC7EF520E1B8AD00A18710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Shake Jack/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hh.Shake-Jack";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FFC7ED920E1B8AC00A18710 /* Build configuration list for PBXProject "Shake Jack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FFC7EF120E1B8AD00A18710 /* Debug */,
+				0FFC7EF220E1B8AD00A18710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FFC7EF320E1B8AD00A18710 /* Build configuration list for PBXNativeTarget "Shake Jack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FFC7EF420E1B8AD00A18710 /* Debug */,
+				0FFC7EF520E1B8AD00A18710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0FFC7EE820E1B8AC00A18710 /* Shake_Jack.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0FFC7EE920E1B8AC00A18710 /* Shake_Jack.xcdatamodel */,
+			);
+			currentVersion = 0FFC7EE920E1B8AC00A18710 /* Shake_Jack.xcdatamodel */;
+			path = Shake_Jack.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0FFC7ED620E1B8AC00A18710 /* Project object */;
+}

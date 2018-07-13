@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-jack-playing-card-spades-valet-de-pique-card-game-cards-5ab597d7b54e17.5400236015218503277426.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-jack-playing-card-spades-valet-de-pique-card-game-cards-5ab597d7b54e17.5400236015218503277426-1.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-jack-playing-card-spades-valet-de-pique-card-game-cards-5ab597d7b54e17.5400236015218503277426-2.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
