@@ -13,13 +13,16 @@ var countdownTimer: Timer!
 
 class GameViewController: UIViewController {
     
+    var cardsLeft: Int {
+        return savedDeck?.cards?.count ?? 0
+    }
+    
     var savedDeck: Deck?
     var totalTime = 52
-    var cardsLeft = 52
     var currentScore = 0
 
     @IBOutlet weak var score: UILabel!
-    @IBOutlet weak var howManyCardUsed: UILabel!
+    @IBOutlet weak var howManyCardLeft: UILabel!
     @IBOutlet weak var currentCardView: UIImageView!
     @IBOutlet weak var timerLabel: UILabel!
     
@@ -49,8 +52,6 @@ class GameViewController: UIViewController {
         }
     }
     
-
-    
         override func viewWillAppear(_ animated: Bool) {
         guard let card = savedDeck?.drawCard() else {
             return
@@ -73,6 +74,7 @@ class GameViewController: UIViewController {
         if totalTime != 0 {
             totalTime -= 1
             nextCard()
+            howManyCardLeft.text = "Cards Left: \(cardsLeft)"
         } else {
             endTimer()
         }
@@ -86,6 +88,17 @@ class GameViewController: UIViewController {
     //MARK: ACTIONS
     
     @IBAction func pauseButtonTapped(_ sender: Any) {
+        guard let button = sender as? UIButton else {
+            return
+        }
+        if button.titleLabel?.text == "Pause" {
+            button.setTitle("Play", for: .normal)
+            endTimer()
+        } else {
+            button.setTitle("Pause", for: .normal)
+            startTimer()
+        }
+        
     }
     
     @IBAction func nextCardDrawn(_ sender: Any) {

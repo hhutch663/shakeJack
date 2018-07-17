@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F01328C20E5226800D8F01A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01328B20E5226800D8F01A /* Card.swift */; };
-		0F03697E20E67343007247D0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F03697D20E67343007247D0 /* Game.swift */; };
 		0F03698020E6840A007247D0 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F03697F20E6840A007247D0 /* HomeScreenViewController.swift */; };
 		0F03698220E68A63007247D0 /* coreDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F03698120E68A63007247D0 /* coreDataExtensions.swift */; };
 		0F39CDFC20EA861A00CF4551 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F39CDFB20EA861A00CF4551 /* Helpers.swift */; };
@@ -21,8 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F01328B20E5226800D8F01A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		0F03697D20E67343007247D0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		0F03697F20E6840A007247D0 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		0F03698120E68A63007247D0 /* coreDataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreDataExtensions.swift; sourceTree = "<group>"; };
 		0F39CDFB20EA861A00CF4551 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -71,9 +67,7 @@
 				0F39CDFB20EA861A00CF4551 /* Helpers.swift */,
 				0FFC7EE520E1B8AC00A18710 /* Main.storyboard */,
 				0F03697F20E6840A007247D0 /* HomeScreenViewController.swift */,
-				0F03697D20E67343007247D0 /* Game.swift */,
 				0F03698120E68A63007247D0 /* coreDataExtensions.swift */,
-				0F01328B20E5226800D8F01A /* Card.swift */,
 				0FFC7EEB20E1B8AD00A18710 /* Assets.xcassets */,
 				0FFC7EED20E1B8AD00A18710 /* LaunchScreen.storyboard */,
 				0FFC7EF020E1B8AD00A18710 /* Info.plist */,
@@ -155,11 +149,9 @@
 			files = (
 				0F03698220E68A63007247D0 /* coreDataExtensions.swift in Sources */,
 				0FFC7EEA20E1B8AC00A18710 /* Shake_Jack.xcdatamodeld in Sources */,
-				0F03697E20E67343007247D0 /* Game.swift in Sources */,
 				0F39CDFC20EA861A00CF4551 /* Helpers.swift in Sources */,
 				0FFC7EE420E1B8AC00A18710 /* GameViewController.swift in Sources */,
 				0FFC7EE220E1B8AC00A18710 /* AppDelegate.swift in Sources */,
-				0F01328C20E5226800D8F01A /* Card.swift in Sources */,
 				0F03698020E6840A007247D0 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
