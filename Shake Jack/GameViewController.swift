@@ -20,7 +20,7 @@ class GameViewController: UIViewController {
     var savedDeck: Deck?
     var totalTime = 52
     var currentScore = 0
-
+    
     @IBOutlet weak var score: UILabel!
     @IBOutlet weak var howManyCardLeft: UILabel!
     @IBOutlet weak var currentCardView: UIImageView!
@@ -31,9 +31,18 @@ class GameViewController: UIViewController {
         self.becomeFirstResponder()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        guard let card = savedDeck?.drawCard() else {
+            return
+        }
+        currentCardView.imageFromURL(urlString: card.image)
+        
+        
+    }
+    
     override var canBecomeFirstResponder: Bool {
         get {
-           return true
+            return true
         }
     }
     
@@ -43,21 +52,13 @@ class GameViewController: UIViewController {
             if let currentCard = savedDeck?.currentCard {
                 if currentCard.value == "JACK" {
                     currentScore += 1
-                    score.text = "\(currentScore)"
+                    score.text = "Score: \(currentScore)"
                 } else {
                     currentScore -= 1
-                    score.text = "\(currentScore)"
+                    score.text = "Score: \(currentScore)"
                 }
             }
         }
-    }
-    
-        override func viewWillAppear(_ animated: Bool) {
-        guard let card = savedDeck?.drawCard() else {
-            return
-        }
-       currentCardView.imageFromURL(urlString: card.image)
-        
     }
     
     func startTimer() {
@@ -68,7 +69,7 @@ class GameViewController: UIViewController {
         countdownTimer.invalidate()
         
     }
-
+    
     @objc func updateTime() {
         timerLabel.text = "\(totalTime)"
         if totalTime != 0 {
@@ -77,6 +78,7 @@ class GameViewController: UIViewController {
             howManyCardLeft.text = "Cards Left: \(cardsLeft)"
         } else {
             endTimer()
+            self.restartGameOrDoNothing()
         }
     }
     
@@ -84,6 +86,53 @@ class GameViewController: UIViewController {
         let card = savedDeck?.drawCard()
         currentCardView.imageFromURL(urlString: card?.image)
     }
+    
+    func restartGameOrDoNothing() {
+        let shuffleDeck = UIAlertAction(title: "Yes", style: .default) { (action) in
+//            func fetchDeck() {
+                let url = URL(string: "https://deckofcardsapi.com/api/deck/new/draw/?count=52")!
+                let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+                    do {
+                        if let data = data, let response = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                            if let deckDict = response["cards"] as? [[String: Any]] {
+                                DispatchQueue.main.sync {
+                                    let deck = Deck.init(AppDelegate.context, json: deckDict)
+                                    self.savedDeck = deck
+                                    self.totalTime = 52
+                                    self.startTimer()
+                                }
+                                print(deckDict)
+                            } else {
+                                print("broke")
+                            }
+                        } else {
+                            print("broke")
+                        }
+                        
+                    } catch {
+                        print(error)
+                    }
+                }
+            
+                task.resume()
+            
+//            }
+        }
+        
+        let doNothing = UIAlertAction(title: "No", style: .default) { (action) in
+            return
+        }
+        let alert = UIAlertController(title: "Game Over", message: "Thank you for playing Shake Jack!  You've finished the game.  Do you want to play again?", preferredStyle: .alert)
+        alert.addAction(shuffleDeck)
+        alert.addAction(doNothing)
+        
+        self.present(alert, animated: true)
+        
+    }
+    
+    
+    
+    
     
     //MARK: ACTIONS
     
@@ -106,4 +155,11 @@ class GameViewController: UIViewController {
     }
     
 }
+
+
+
+
+
+
+
 
